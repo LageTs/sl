@@ -55,7 +55,7 @@
 #include <unistd.h>
 #include "sl.h"
 
-#define VERSION "5.04"
+#define VERSION "5.05-laget"
 
 void add_smoke(int y, int x);
 void add_man(int y, int x);
@@ -100,7 +100,7 @@ void option(char *str)
             case 'l': LOGO     = 1; break;
             case 'w': WIND     = 200; break;
             case 'v': 
-              printf("Version: %s, last updated: 2019-03-19\n", VERSION);
+              printf("Version: %s, last updated: 2024-03-28\n", VERSION);
               exit(0);
               break;
             default:
@@ -172,7 +172,7 @@ int main(int argc, char *argv[])
     mvcur(0, COLS - 1, LINES - 1, 0);
     endwin();
 
-    return(EXIT_FAILURE);
+    return(EXIT_SUCCESS);
 }
 
 
